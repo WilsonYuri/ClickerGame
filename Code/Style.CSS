@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono:wght@500&display=swap');
 @keyframes rotation {
     from {
       transform: rotate(0deg);
@@ -68,14 +67,21 @@ h4{
     display: inline;
 }
 
-.items>div>span{
+.items>div>div>span{
     margin-left: 10px;
     display: inline;
     /* border: solid 1px darkgoldenrod; */
     padding: 2px 8px;
     border-radius: 5px;
     background-color: darkgoldenrod;
-    display: inline-block;
+    display: inline;
+}
+
+.items>div>div>p{
+    margin-left: 10px;
+    display: inline;
+    font-family: 'Roboto Mono', sans-serif;
+    color: gray;
 }
 
 .items{
@@ -84,6 +90,11 @@ h4{
     background-color: rgb(26, 26, 123);
     color: rgb(239, 214, 133);
     padding: 10px;
+    
+}
+
+.items:hover{
+    cursor: pointer;
 }
 
 #options{
